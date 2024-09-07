@@ -333,14 +333,14 @@ main .section-hero {
   & .hero-subheading {
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    font-size: 1.7rem;
-    word-spacing: 0.2rem;
+    font-size: 1.5rem;
+    word-spacing: 0.1rem;
     color: #003b99;
     font-weight: 700;
   }
 
   & .hero-heading {
-    font-size: 5.8rem;
+    font-size: 5rem;
     line-height: 1.5;
     initial-letter: -0.2rem;
     text-transform: capitalize;
