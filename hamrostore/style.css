@@ -851,8 +851,8 @@ footer {
 /**** Our Home product section Ends  ****/
 
 #cartValue {
-  background-color: var(--buttonColor);
-  color: #fff;
+  background-color:whitesmoke var(--buttonColor);
+  color: #000000;
   padding: 1rem 2rem;
 }
 
