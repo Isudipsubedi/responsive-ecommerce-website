@@ -19,8 +19,6 @@ if (event.target.className === "cartIncrement" ){
 if (event.target.className === "cartDecrement" ){
     if(quantity>1){
         quantity -= 1;
-    } else if (quantity <2) {
-        quantity = 1;
     }
 }
 
