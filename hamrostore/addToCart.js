@@ -3,6 +3,10 @@ import { updateCartValue } from "./updateCartValue";
 
 getCartProductFromLS();
 
+//----------------------------------
+//to add the data into local storage
+//----------------------------------
+
 export const addToCart = (event, id, stock)=>{
 
     let arrLocalStorageProduct = getCartProductFromLS();
