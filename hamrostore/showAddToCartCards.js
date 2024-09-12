@@ -1,6 +1,7 @@
 import products from "./api/products.json";
 import { fetchQuantityFromCartLS } from "./fetchQuantityFromCartLS";
 import { getCartProductFromLS } from "./getCartProducts";
+import { removeProdFromCart } from "./removeProdFromCart";
 
 let cartProducts = getCartProductFromLS();
 
@@ -33,6 +34,9 @@ const showCartProduct = ()=>{
 
     productClone.querySelector(".productQuantity").textContent = lSActualData.quantity;
     productClone.querySelector(".productPrice").textContent =lSActualData.price;
+
+    productClone.querySelector('.remove-to-cart-button').addEventListener('click',()=> removeProdFromCart(id));
+    
 
     cartElement.appendChild(productClone);
   });
