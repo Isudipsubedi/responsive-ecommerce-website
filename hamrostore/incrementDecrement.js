@@ -1,4 +1,5 @@
 import { getCartProductFromLS } from "./getCartProducts";
+import { updateCartProductTotal } from "./updateCartProductTotal";
 
 export const incrementDecrement = (event, id, stock, price)=> {
     const currentCardElement = document.querySelector(`#card${id}`);
@@ -58,4 +59,8 @@ export const incrementDecrement = (event, id, stock, price)=> {
     //reflect the increment and decrement on screen too
     productQuantity.innerText = quantity;
     productPrice.innerText = localStoragePrice;
+
+    //calculating the card total in our cartProducts page
+
+    updateCartProductTotal();
 };

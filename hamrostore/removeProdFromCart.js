@@ -1,4 +1,5 @@
 import { getCartProductFromLS } from "./getCartProducts";
+import { updateCartProductTotal } from "./updateCartProductTotal";
 import { updateCartValue } from "./updateCartValue";
 
 export const removeProdFromCart =(id) => {
@@ -16,4 +17,8 @@ export const removeProdFromCart =(id) => {
     } 
 
     updateCartValue(cartProducts);
+
+    //calculating the card total in our cartProducts page
+
+    updateCartProductTotal();
 };
