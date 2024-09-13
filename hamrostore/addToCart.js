@@ -29,7 +29,7 @@ export const addToCart = (event, id, stock)=>{
     price = Number(price * quantity);
     let updatedCart = {id, quantity,price};
     updatedCart = arrLocalStorageProduct.map((curProd)=>{
-      return (curProd.id === id) ? updatedCart: curProd;
+      return curProd.id === id ? updatedCart: curProd;
     });
   //  console.log(updatedCart);
     
