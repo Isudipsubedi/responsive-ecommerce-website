@@ -44,6 +44,7 @@ export const incrementDecrement = (event, id, stock, price)=> {
     //update actual local storage price
 
     localStoragePrice = price * quantity;
+    localStoragePrice =Number( localStoragePrice.toFixed(2));
 
     let updatedCart = {id, quantity,price: localStoragePrice};
     updatedCart = localCartProducts.map((curProd)=>{
