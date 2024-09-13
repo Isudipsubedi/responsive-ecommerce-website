@@ -7,4 +7,12 @@ export const removeProdFromCart =(id) => {
     // update localStorage after removing the item
     localStorage.setItem('cartProductLS', JSON.stringify(cartProducts));
 
+
+    //to remove the div onclick
+    let removeDiv = document.getElementById(`card${id}`);
+    if (removeDiv){
+        removeDiv.remove()
+    } 
+
+    updateCartValue(cartProducts);
 };
