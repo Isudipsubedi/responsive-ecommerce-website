@@ -1,4 +1,5 @@
 import { getCartProductFromLS } from "./getCartProducts";
+import { showToast } from "./showToast";
 import { updateCartProductTotal } from "./updateCartProductTotal";
 import { updateCartValue } from "./updateCartValue";
 
@@ -13,7 +14,9 @@ export const removeProdFromCart =(id) => {
     //to remove the div onclick
     let removeDiv = document.getElementById(`card${id}`);
     if (removeDiv){
-        removeDiv.remove()
+        removeDiv.remove();
+        //show toast when product added to the cart
+        showToast("delete",id);
     } 
 
     updateCartValue(cartProducts);
